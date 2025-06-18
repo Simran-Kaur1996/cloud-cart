@@ -13,9 +13,6 @@ RUN npm install --production
 # Copy the rest of your backend code into the container
 COPY . .
 
-# Set environment variable if needed
-# ENV NODE_ENV=production
-
 # Expose the port your app runs on (adjust if different)
 EXPOSE 5000
 
