@@ -27,6 +27,7 @@ export const createProduct = async (productData) => {
     name: productData.name,
     price: productData.price,
     description: productData.description || "",
+    imageUrl: productData.imageUrl || "",
     createdAt: new Date().toISOString(),
   };
 

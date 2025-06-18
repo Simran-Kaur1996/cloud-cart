@@ -32,13 +32,20 @@ export const fetchProductById = async (req, res) => {
 
 // POST /api/products
 export const createNewProduct = async (req, res) => {
-  const { name, price, description } = req.body;
+  const { name, price, description, imageUrl } = req.body;
+
+  console.log(name, price, description, imageUrl);
 
   if (!name || price === undefined)
     return res.status(400).json({ error: "Name and price are required" });
 
   try {
-    const newProduct = await createProduct({ name, price, description });
+    const newProduct = await createProduct({
+      name,
+      price,
+      description,
+      imageUrl,
+    });
     res.status(201).json(newProduct);
   } catch (err) {
     console.log(err);
