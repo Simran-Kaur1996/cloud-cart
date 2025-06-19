@@ -1,40 +1,51 @@
- CloudCart – Fully Automated eCommerce App (React + Node.js + AWS)
-CloudCart is a modern, cloud-native eCommerce application built using the MERN-like stack, leveraging React for the frontend, Node.js for the backend, and DynamoDB as a NoSQL database. The entire deployment pipeline is fully automated using Docker, GitHub Actions, and Amazon ECS (Fargate) for seamless CI/CD.
+# 🌩️ CloudCart – Fully Automated eCommerce App (React + Node.js + AWS)
 
-🚀 Tech Stack
-Frontend: React (with Material UI)
+> A modern cloud-native eCommerce app powered by React, Node.js, and AWS DynamoDB — with **fully automated CI/CD** using Docker, GitHub Actions & AWS ECS (Fargate).
 
-Backend: Node.js (Express)
+![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)
+![AWS](https://img.shields.io/badge/Deployed%20on-AWS%20ECS-orange?logo=amazon-aws)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue?logo=githubactions)
+![Database](https://img.shields.io/badge/Database-DynamoDB-darkblue?logo=amazon-dynamodb)
 
-Database: AWS DynamoDB
+---
 
-DevOps: Docker, GitHub Actions, AWS ECS (Fargate)
+## 🚀 Tech Stack
 
-⚙️ Features & Highlights
-✅ Full Automation Workflow
-CI/CD implemented using GitHub Actions
+- **Frontend:** React + Material UI  
+- **Backend:** Node.js + Express  
+- **Database:** AWS DynamoDB  
+- **DevOps:** Docker, GitHub Actions, ECS Fargate
 
-On every push to main, GitHub builds and pushes Docker images to Docker Hub
+---
 
-AWS ECS is notified to pull the latest image automatically
+<details>
+  <summary><strong>⚙️ Features & Highlights (Click to Expand)</strong></summary>
 
-No manual deployment needed – 100% automated!
+### ✅ Full Automation Workflow
+- Push to `main` branch triggers GitHub Actions
+- Docker images are built and pushed to Docker Hub
+- AWS ECS (Fargate) automatically pulls the latest image
+- No manual deployment — 100% **CI/CD automated**
 
-✅ Modular Architecture
-Clean separation between frontend and backend
+### ✅ Modular Architecture
+- Clean separation between frontend and backend
+- Each service is dockerized and independently deployable
+- Communication via internal ECS networking
 
-Dockerized services run independently and communicate over internal ECS networking
+### ✅ DynamoDB Integration
+- Node.js backend connects to DynamoDB using `aws-sdk`
+- Credentials securely passed via ECS task environment variables
 
-✅ DynamoDB Integration
-Backend is connected to AWS DynamoDB
+### ✅ Product Management (CRUD)
+- Add, Edit, Delete, View products
+- Product includes name, price, description, and image
+- React frontend seamlessly interacts with API
 
-Uses aws-sdk to perform database operations
+</details>
 
-Dynamically reads AWS credentials from ECS environment variables
+---
 
-✅ Product Management (CRUD)
-Create, Read, Update, and Delete product items
+## 📦 Project Structure
 
-Each product includes name, price, description, and image URL
 
-Fully functional frontend integration for managing products
