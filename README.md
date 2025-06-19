@@ -20,7 +20,7 @@
 ---
 
 <details>
-  <summary><strong>⚙️ Features & Highlights (Click to Expand)</strong></summary>
+  <strong>⚙️ Features & Highlights (Click to Expand)</strong>
 
 ### ✅ Full Automation Workflow
 - Push to `main` branch triggers GitHub Actions
@@ -46,6 +46,5 @@
 
 ---
 
-## 📦 Project Structure
 
 
