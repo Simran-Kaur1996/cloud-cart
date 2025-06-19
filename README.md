@@ -45,6 +45,16 @@
 </details>
 
 ---
+## 📸 Screenshots
+
+### 🛍️ Homepage  
+![Homepage](https://raw.githubusercontent.com/your-username/cloudcart/main/screenshots/homepage.png)
+
+### 📦 Product CRUD Panel  
+![Admin CRUD](https://raw.githubusercontent.com/your-username/cloudcart/main/screenshots/admin-crud.png)
+
+### ⚙️ CI/CD Pipeline View  
+![CI/CD Workflow](https://raw.githubusercontent.com/your-username/cloudcart/main/screenshots/cicd-pipeline.png)
 
 
 
