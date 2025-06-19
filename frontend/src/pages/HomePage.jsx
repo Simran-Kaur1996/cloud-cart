@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <Container>
       <Typography variant="h2" align="center" gutterBottom>
-        Welcome to CloudCart
+        Welcome to update CloudCart
       </Typography>
       <Typography variant="h6" align="center" gutterBottom>
         Your one-stop shop for everything!
