@@ -38,9 +38,9 @@ const UpdateProduct = () => {
     e.preventDefault();
     try {
       if (product.id) {
-        await axios.put(`${API_BASE}/api/products/${product.id}`, product);
+        await axios.put(`${API_BASE}:5000/api/products/${product.id}`, product);
       } else {
-        await axios.post(`${API_BASE}/api/products`, product);
+        await axios.post(`${API_BASE}:5000/api/products`, product);
       }
 
       setSuccess(true);
