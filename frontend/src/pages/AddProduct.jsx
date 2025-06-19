@@ -14,6 +14,7 @@ import axios from "axios";
 const UpdateProduct = () => {
   const location = useLocation();
   const navigate = useNavigate();
+
   const initialData = location.state || {
     name: "",
     price: "",
@@ -23,6 +24,8 @@ const UpdateProduct = () => {
 
   const [product, setProduct] = useState(initialData);
   const [success, setSuccess] = useState(false);
+
+  const API_BASE = process.env.REACT_APP_API_BASE;
 
   const handleChange = (e) => {
     setProduct((prev) => ({
@@ -35,19 +38,18 @@ const UpdateProduct = () => {
     e.preventDefault();
     try {
       if (product.id) {
-        await axios.put(
-          `http://localhost:5000/api/products/${product.id}`,
-          product
-        );
+        await axios.put(`${API_BASE}/api/products/${product.id}`, product);
       } else {
-        await axios.post("http://localhost:5000/api/products", product);
+        await axios.post(`${API_BASE}/api/products`, product);
       }
 
       setSuccess(true);
 
+      // navigate to homepage after success
       navigate("/", { replace: true });
     } catch (error) {
       alert("Error saving product");
+      console.error(error);
     }
   };
 

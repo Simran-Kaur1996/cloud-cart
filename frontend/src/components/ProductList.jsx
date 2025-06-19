@@ -18,9 +18,11 @@ const ProductList = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
+  const API_BASE = process.env.REACT_APP_API_BASE;
+
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/products");
+      const res = await axios.get(`${API_BASE}/api/products`);
       setProducts(res.data);
       setLoading(false);
     } catch (error) {
@@ -31,7 +33,7 @@ const ProductList = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/products/${id}`);
+      await axios.delete(`${API_BASE}/api/products/${id}`);
       fetchProducts(); // refresh list
     } catch (error) {
       console.error("Delete failed", error);

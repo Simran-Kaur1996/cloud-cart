@@ -13,6 +13,8 @@ services:
     container_name: react-frontend
     ports:
       - "3000:80"
+    env_file:
+      - ./frontend/.env.production # not pushed to Git
     depends_on:
       - backend
     networks:
