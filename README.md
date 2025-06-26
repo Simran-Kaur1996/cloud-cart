@@ -39,6 +39,7 @@
 - Product includes name, price, description, and image
 - React frontend seamlessly interacts with API
 
+![image](https://github.com/user-attachments/assets/686202ed-5ca6-4efc-9f13-91e53341ff65)
 
 
 
