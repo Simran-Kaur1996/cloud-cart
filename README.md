@@ -19,9 +19,6 @@
 
 ---
 
-<details>
-  <summary><strong>⚙️ Features & Highlights (Click to Expand)</strong></summary>
-
 ### ✅ Full Automation Workflow
 - Push to `main` branch triggers GitHub Actions
 - Docker images are built and pushed to Docker Hub
@@ -41,20 +38,6 @@
 - Add, Edit, Delete, View products
 - Product includes name, price, description, and image
 - React frontend seamlessly interacts with API
-
-</details>
-
----
-## 📸 Screenshots
-
-### 🛍️ Homepage  
-![Homepage](https://raw.githubusercontent.com/your-username/cloudcart/main/screenshots/homepage.png)
-
-### 📦 Product CRUD Panel  
-![Admin CRUD](https://raw.githubusercontent.com/your-username/cloudcart/main/screenshots/admin-crud.png)
-
-### ⚙️ CI/CD Pipeline View  
-![CI/CD Workflow](https://raw.githubusercontent.com/your-username/cloudcart/main/screenshots/cicd-pipeline.png)
 
 
 
